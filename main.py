@@ -27,9 +27,9 @@ async def main() -> Coroutine[any, any, None]:
     embed.set_title(title)
     embed.set_thumbnail(url=image_url)
     embed.set_description(message)
-    
+
     webhook.add_embed(embed)
-    
+
     await webhook.execute()
 
 
